@@ -42,7 +42,7 @@ exports.createPages = async ({ actions, graphql }) => {
 async function createBlogPages(createPage, graphql) {
   const blogTemplate = path.resolve('./src/templates/blog.js');
   const postTemplate = path.resolve('./src/templates/blog-post.js');
-  const posts = await markdownQuery(graphql, 'blog-posts');
+  const posts = await markdownQuery(graphql, 'blog');
 
   // Create pagination index page
   paginate({
@@ -67,7 +67,7 @@ async function createBlogPages(createPage, graphql) {
 
 async function createMarkdownPages(createPage, graphql) {
   const pageTemplate = path.resolve('./src/templates/documentation-page.js');
-  const pages = await markdownQuery(graphql, 'documentation-pages');
+  const pages = await markdownQuery(graphql, 'documentation');
 
   pages.forEach(({ node }) => {
     createPage({

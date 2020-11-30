@@ -114,16 +114,23 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blog-posts`,
-        path: `${__dirname}/src/blog-posts`,
+        name: `blog`,
+        path: `${__dirname}/src/blog`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `documentation-pages`,
-        path: `${__dirname}/src/documentation-pages`,
+        name: `documentation`,
+        path: `${__dirname}/src/documentation`,
       },
+    },  
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `oscal`,
+        path: `${__dirname}/content`,
+      }
     },
     `gatsby-transformer-remark`,
     {
@@ -138,6 +145,14 @@ module.exports = {
         icon: `src/images/federalist-icon.png`, // This path is relative to the root of the site.
       },
     },
+    'gatsby-transformer-json',
+    //{
+    // resolve: `gatsby-source-filesystem`,
+    //  options: {
+    //    name: `oscal-content`,
+    //    path: `${__dirname}/content`,
+    //  },
+    //},
     `gatsby-plugin-netlify-cms`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

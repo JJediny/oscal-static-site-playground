@@ -1,0 +1,285 @@
+{
+    "component": {
+      "metadata": {
+        "title": "ABCDEFGHIJKLMNOPQRST",
+        "last-modified": "19-02-29",
+        "version": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "oscal-version": "ABCDEFGHIJK",
+        "published": "19-02-29",
+        "revision-history": [
+          {
+            "title": "ABCDEFGHIJKLMNOPQRSTUVW",
+            "published": "2908-01-31",
+            "last-modified": "1995-08-30",
+            "version": "ABCDEFGHIJKLMNOPQ",
+            "oscal-version": "ABCDEFGHIJKLMNOPQRSTU",
+            "properties": [
+              {
+                "value": "ABCD",
+                "name": "ABCDEFGHIJKLM",
+                "uuid": "3F0B2CC7-eCfC-4f65-8301-7dD6DF4eD053",
+                "ns": "ABCDEFGHIJKLMNOPQRSTUVWX",
+                "class": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+              }
+            ],
+            "links": [
+              {
+                "text": "ABCDEFGHIJKLMNOPQRSTUVW",
+                "href": "ABCDEFGHIJKLMNO",
+                "rel": "ABCDEFGHIJKLMNOPQRST",
+                "media-type": "ABCDEFGHIJKLMNO"
+              }
+            ],
+            "remarks": "ABCDEFGHIJKLMNOPQ"
+          }
+        ],
+        "document-ids": [
+          {
+            "identifier": "ABCDEFGHIJKLMNOPQRST",
+            "type": "ABCDEFGHIJKLMNOP"
+          }
+        ],
+        "properties": [
+          {
+            "value": "ABCDEFGHIJKLMNOP",
+            "name": "ABCDEFGHIJKL",
+            "uuid": "DaBDC974-B62F-4C1F-aFB4-Ea17EdDCef4b",
+            "ns": "ABCDEFGHIJKLMNOPQRSTU",
+            "class": "ABCDEFGHIJKLMNOPQRSTUVWXYZA"
+          }
+        ],
+        "links": [
+          {
+            "text": "ABCDEFGHIJKLMN",
+            "href": "ABCDEF",
+            "rel": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB",
+            "media-type": "ABCDEFGHIJKLMNOPQRSTU"
+          }
+        ],
+        "roles": [
+          {
+            "id": "ABCDEFGHIJKLMNO",
+            "title": "ABCDEFGHIJKLM",
+            "short-name": "ABCDE",
+            "desc": "ABCDE",
+            "properties": [
+              {
+                "value": "ABCDEFGHIJKLMNOPQRSTUVWX",
+                "name": "ABCDEFGH",
+                "uuid": "cfa6AEFC-CFaB-48c9-B3cE-2E8aeDbEd2Dd",
+                "ns": "ABCDEFGHIJK",
+                "class": "ABCDEFGHIJK"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "ABCDE",
+                "uuid": "De33aa6e-DbDa-443A-ABeF-Ac5B3afbce8D",
+                "ns": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+                "value": "ABCDEFGHIJKLMNOPQRSTUVWX",
+                "remarks": "ABCDEFGHI"
+              }
+            ],
+            "links": [
+              {
+                "text": "ABCDEFGHI",
+                "href": "ABCDE",
+                "rel": "ABCDEFGHIJKLMNOPQ",
+                "media-type": "ABCDEFGHIJKLMNOPQRSTUVWX"
+              }
+            ],
+            "remarks": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB"
+          }
+        ],
+        "locations": [
+          {
+            "uuid": "c6de281C-f7a0-463f-AbcD-1620BEEc5e4c",
+            "address": {
+              "type": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+              "postal-address": [
+                "ABCDEFGHIJKLMNOPQRSTUVWXYZA"
+              ],
+              "city": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+              "state": "ABCDEFGHIJK",
+              "postal-code": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+              "country": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB"
+            },
+            "title": "ABCD",
+            "email-addresses": [
+              "lZX@'"
+            ],
+            "telephone-numbers": [
+              {
+                "number": "ABCDE",
+                "type": "ABCDEFGHIJKLMNOPQRSTUV"
+              }
+            ],
+            "URLs": [
+              "ABCDEFGHIJK"
+            ],
+            "properties": [
+              {
+                "value": "ABCDEFG",
+                "name": "ABCD",
+                "uuid": "d6Fefbbd-fEaF-4e8c-Bd6F-CfA0f5b7073C",
+                "ns": "ABCDEFG",
+                "class": "ABCDEFGH"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "ABCDEF",
+                "uuid": "a7d8fCCF-88F5-4c5F-BD0e-68B8Ac6499df",
+                "ns": "ABCDEFGHIJ",
+                "value": "ABCDEFGHIJKLMNOPQR",
+                "remarks": "ABCDEFGHIJKLMNOPQR"
+              }
+            ],
+            "links": [
+              {
+                "text": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+                "href": "ABCDEFGHIJKLMNOPQRSTUVW",
+                "rel": "ABCDEFGHIJK",
+                "media-type": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB"
+              }
+            ],
+            "remarks": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC"
+          }
+        ],
+        "parties": [
+          {
+            "uuid": "E20BeE2B-C26E-4FEa-B5Ab-6dd0dCbC5523",
+            "type": "organization",
+            "party-name": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+            "short-name": "ABCDEFGHIJKLMNO",
+            "external-ids": [
+              {
+                "id": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+                "type": "ABCDEFGHIJKLMNOPQRSTUVW"
+              }
+            ],
+            "properties": [
+              {
+                "value": "ABCDE",
+                "name": "ABCD",
+                "uuid": "8ccA1Bd2-767F-4CfD-B8f6-86bdAeccBF5e",
+                "ns": "ABCDEFGHIJKLMNOPQRS",
+                "class": "ABCDEFGHIJKLMNOP"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "ABCDEFGHIJKLMNO",
+                "uuid": "dBf3Fa23-F96F-4b8D-9c7b-C0cAFad3ddCD",
+                "ns": "ABCDEFGHI",
+                "value": "ABCDEFGHIJKLM",
+                "remarks": "ABCDEFGHIJKLM"
+              }
+            ],
+            "links": [
+              {
+                "text": "ABCDEFGHIJKLMNOP",
+                "href": "ABCDEFGHIJKLMNOPQRST",
+                "rel": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+                "media-type": "ABCDEF"
+              }
+            ],
+            "addresses": [
+              {
+                "type": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+                "postal-address": [
+                  "ABCDEFGHIJKLMNO"
+                ],
+                "city": "ABCDEFGHIJK",
+                "state": "ABCDE",
+                "postal-code": "ABCDEFGHIJKLMNOPQRSTUVW",
+                "country": "ABCDEFGHIJKLM"
+              }
+            ],
+            "email-addresses": [
+              "'&@1"
+            ],
+            "telephone-numbers": [
+              {
+                "number": "ABCDEFGHIJKLMN",
+                "type": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC"
+              }
+            ],
+            "member-of-organizations": [
+              "FAb6EFDd-cafE-4C3A-8cad-Ffcc5Ae4FF7f"
+            ],
+            "location-uuids": [
+              "4bd8bDce-dc6f-4fef-Aa1c-9c7e0FC8DaA7"
+            ],
+            "remarks": "ABCDEFGHIJKLMNOPQRSTUVWXY"
+          }
+        ],
+        "responsible-parties": {},
+        "remarks": "ABCDEFGHIJKLMNOPQRSTU"
+      },
+      "import-component-definitions": [
+        {
+          "href": "ABCDEFGHIJKLMNOPQRSTUVWX"
+        }
+      ],
+      "components": {},
+      "capabilities": {},
+      "back-matter": {
+        "resources": [
+          {
+            "uuid": "FFFEDF74-dc7e-4bAF-Bc7D-fF3bedCeC038",
+            "title": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+            "desc": "ABCDEFGHIJKLM",
+            "properties": [
+              {
+                "value": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+                "name": "ABCDEFGH",
+                "uuid": "45E2D1Dc-AC3E-4D9d-9ec0-77Af798e4cc4",
+                "ns": "ABCDEFGHIJKLMN",
+                "class": "ABCDEFGHIJKLMNOPQRSTU"
+              }
+            ],
+            "document-ids": [
+              {
+                "identifier": "ABCDEFGHIJKLMNOPQR",
+                "type": "ABCDEFGHI"
+              }
+            ],
+            "citation": {
+              "text": "ABCDEFGHIJK",
+              "properties": [
+                {
+                  "value": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+                  "name": "ABCDEFGHIJKLMNOPQRSTUV",
+                  "uuid": "FdCE4DBD-Bbaa-44C0-8c5F-bAc27d9110b4",
+                  "ns": "ABCDEFGHIJKLMNOPQR",
+                  "class": "ABCDEFGHI"
+                }
+              ],
+              "biblio": {}
+            },
+            "rlinks": [
+              {
+                "href": "ABCDEFGHIJKLMNOP",
+                "media-type": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+                "hashes": [
+                  {
+                    "value": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB",
+                    "algorithm": "ABCDEFGHIJKLMNOPQRSTUVWX"
+                  }
+                ]
+              }
+            ],
+            "attachments": [
+              {
+                "value": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+                "filename": "ABCDE",
+                "media-type": "ABCDEFGHIJKLMNO"
+              }
+            ],
+            "remarks": "ABCDEF"
+          }
+        ]
+      }
+    }
+  }

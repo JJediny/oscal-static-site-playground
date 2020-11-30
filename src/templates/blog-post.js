@@ -40,7 +40,7 @@ export const pageQuery = graphql`
   query($name: String!) {
     markdownRemark(
       fields: {
-        sourceName: { eq: "blog-posts" }
+        sourceName: { eq: "blog" }
         name: { eq: $name }
       }
     ) {
