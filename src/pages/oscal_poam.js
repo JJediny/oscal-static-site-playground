@@ -3,10 +3,10 @@ import JSONData from "../../content/oscal_poam_schema.json"
 
 const JSONbuildtime = () => (
   <div style={{ maxWidth: `960px`, margin: `1.45rem` }}>
-    <h1>{JSONData.poam}</h1>
+    <h1>{JSONData.poam.metadata.title}</h1>
     <ul>
-      {JSONData.metadata.map((data, index) => {
-        return <li key={`metadata_title_${index}`}>{data.title}</li>
+      {JSONData.poam.poam-items.map((data, index) => {
+        return <li key={`poam_${index}`}>{data.item}</li>
       })}
     </ul>
   </div>

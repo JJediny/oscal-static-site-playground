@@ -130,6 +130,9 @@ module.exports = {
       options: {
         name: `oscal`,
         path: `${__dirname}/content`,
+        plugins: [
+          `gatsby-transformer-json`
+        ]
       }
     },
     `gatsby-transformer-remark`,
@@ -146,13 +149,13 @@ module.exports = {
       },
     },
     'gatsby-transformer-json',
-    //{
-    // resolve: `gatsby-source-filesystem`,
-    //  options: {
-    //    name: `oscal-content`,
-    //    path: `${__dirname}/content`,
-    //  },
-    //},
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `oscal-content`,
+        path: `${__dirname}/content`,
+      },
+    },
     `gatsby-plugin-netlify-cms`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
