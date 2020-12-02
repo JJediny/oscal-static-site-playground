@@ -1,0 +1,320 @@
+type Attachments {
+  value: String
+  filename: String
+  media-type: String
+}
+
+type Hashes {
+  value: String
+  algorithm: String
+}
+
+type Rlinks {
+  href: String
+  media-type: String
+  hashes: [Hashes]
+}
+
+type Properties {
+  value: String
+  name: String
+  uuid: String
+  ns: String
+  class: String
+}
+
+type Citation {
+  text: String
+  properties: [Properties]
+}
+
+type DocumentIds {
+  identifier: String
+  type: String
+}
+
+type Resources {
+  uuid: String
+  title: String
+  desc: String
+  remarks: String
+  attachments: [Attachments]
+  rlinks: [Rlinks]
+  citation: Citation
+  document-ids: [DocumentIds]
+  properties: [Properties]
+}
+
+type BackMatter {
+  resources: [Resources]
+}
+
+type Links {
+  text: String
+  href: String
+  rel: String
+  media-type: String
+}
+
+type Annotations {
+  name: String
+  uuid: String
+  ns: String
+  value: String
+  remarks: String
+}
+
+type ImplementedRequirements {
+  uuid: String
+  control-id: String
+  remarks: String
+  links: [Links]
+  annotations: [Annotations]
+  properties: [Properties]
+}
+
+type ControlImplementation {
+  description: String
+  implemented-requirements: [ImplementedRequirements]
+}
+
+type SystemInventory {
+  remarks: String
+}
+
+type LeveragedAuthorizations {
+  uuid: String
+  title: String
+  party-uuid: String
+  date-authorized: String
+  remarks: String
+  links: [Links]
+  annotations: [Annotations]
+  properties: [Properties]
+}
+
+type SystemImplementation {
+  remarks: String
+  system-inventory: SystemInventory
+  leveraged-authorizations: [LeveragedAuthorizations]
+  links: [Links]
+  annotations: [Annotations]
+  properties: [Properties]
+}
+
+type DataFlow {
+  description: String
+  remarks: String
+  links: [Links]
+  annotations: [Annotations]
+  properties: [Properties]
+}
+
+type NetworkArchitecture {
+  description: String
+  remarks: String
+  links: [Links]
+  annotations: [Annotations]
+  properties: [Properties]
+}
+
+type AuthorizationBoundary {
+  description: String
+  remarks: String
+  links: [Links]
+  annotations: [Annotations]
+  properties: [Properties]
+}
+
+type Status {
+  state: String
+  remarks: String
+}
+
+type SecurityImpactLevel {
+  security-objective-confidentiality: String
+  security-objective-integrity: String
+  security-objective-availability: String
+}
+
+type AvailabilityImpact {
+  base: String
+  selected: String
+  adjustment-justification: String
+  properties: [Properties]
+}
+
+type IntegrityImpact {
+  base: String
+  selected: String
+  adjustment-justification: String
+  properties: [Properties]
+}
+
+type ConfidentialityImpact {
+  base: String
+  selected: String
+  adjustment-justification: String
+  properties: [Properties]
+}
+
+type InformationTypes {
+  title: String
+  description: String
+  uuid: String
+  properties: [Properties]
+  availability-impact: AvailabilityImpact
+  integrity-impact: IntegrityImpact
+  confidentiality-impact: ConfidentialityImpact
+}
+
+type SystemInformation {
+  links: [Links]
+  annotations: [Annotations]
+  properties: [Properties]
+  information-types: [InformationTypes]
+}
+
+type SystemIds {
+  id: String
+  identifier-type: String
+}
+
+type SystemCharacteristics {
+  system-name: String
+  description: String
+  security-sensitivity-level: String
+  system-name-short: String
+  date-authorized: String
+  remarks: String
+  data-flow: DataFlow
+  network-architecture: NetworkArchitecture
+  links: [Links]
+  annotations: [Annotations]
+  properties: [Properties]
+  authorization-boundary: AuthorizationBoundary
+  status: Status
+  security-impact-level: SecurityImpactLevel
+  system-information: SystemInformation
+  system-ids: [SystemIds]
+}
+
+type ImportProfile {
+  href: String
+  remarks: String
+}
+
+type TelephoneNumbers {
+  number: String
+  type: String
+}
+
+type Addresses {
+  type: String
+  city: String
+  state: String
+  postal-code: String
+  country: String
+  postal-address: [String]
+}
+
+type ExternalIds {
+  id: String
+  type: String
+}
+
+type Parties {
+  uuid: String
+  type: String
+  party-name: String
+  short-name: String
+  remarks: String
+  location-uuids: [String]
+  member-of-organizations: [String]
+  telephone-numbers: [TelephoneNumbers]
+  email-addresses: [String]
+  addresses: [Addresses]
+  links: [Links]
+  annotations: [Annotations]
+  properties: [Properties]
+  external-ids: [ExternalIds]
+}
+
+type Address {
+  type: String
+  city: String
+  state: String
+  postal-code: String
+  country: String
+  postal-address: [String]
+}
+
+type Locations {
+  uuid: String
+  title: String
+  remarks: String
+  links: [Links]
+  annotations: [Annotations]
+  properties: [Properties]
+  URLs: [String]
+  telephone-numbers: [TelephoneNumbers]
+  email-addresses: [String]
+  address: Address
+}
+
+type Roles {
+  id: String
+  title: String
+  short-name: String
+  desc: String
+  remarks: String
+  links: [Links]
+  annotations: [Annotations]
+  properties: [Properties]
+}
+
+type RevisionHistory {
+  title: String
+  published: String
+  last-modified: String
+  version: String
+  oscal-version: String
+  remarks: String
+  links: [Links]
+  properties: [Properties]
+}
+
+type Metadata {
+  title: String
+  last-modified: String
+  version: String
+  oscal-version: String
+  published: String
+  remarks: String
+  parties: [Parties]
+  locations: [Locations]
+  roles: [Roles]
+  links: [Links]
+  properties: [Properties]
+  document-ids: [DocumentIds]
+  revision-history: [RevisionHistory]
+}
+
+type SystemSecurityPlan {
+  uuid: String
+  back-matter: BackMatter
+  control-implementation: ControlImplementation
+  system-implementation: SystemImplementation
+  system-characteristics: SystemCharacteristics
+  import-profile: ImportProfile
+  metadata: Metadata
+}
+
+type AutogeneratedMainType {
+  system-security-plan: SystemSecurityPlan
+}
+
+# Types with identical fields:
+# DataFlow NetworkArchitecture AuthorizationBoundary
+# AvailabilityImpact IntegrityImpact ConfidentialityImpact
+# Addresses Address

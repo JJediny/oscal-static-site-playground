@@ -225,7 +225,7 @@ const Blog = ({ data, pageContext }) => {
 export const pageQuery = graphql`
   query($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      filter: { fields: { sourceName: { eq: "blog-posts" } } }
+      filter: { fields: { sourceName: { eq: "blog" } } }
       sort: { fields: frontmatter___date, order: DESC }
       skip: $skip
       limit: $limit

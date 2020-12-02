@@ -9,7 +9,7 @@ import Sidenav from '../components/sidenav';
   This template is for a single page that does not have a date associated with it. For example, an about page.
 */
 
-const DocumentationPage = ({ data }) => {
+const Documentation = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
 
@@ -35,7 +35,7 @@ export const pageQuery = graphql`
   query($name: String!) {
     markdownRemark(
       fields: {
-        sourceName: { eq: "documentation-pages" }
+        sourceName: { eq: "documentation" }
         name: { eq: $name }
       }
     ) {
@@ -48,4 +48,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default DocumentationPage;
+export default Documentation;

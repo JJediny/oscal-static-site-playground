@@ -1,0 +1,670 @@
+{
+    "poam": {
+      "uuid": "EABF82ef-45aB-4cFB-a7BB-cDcedaA9ee72",
+      "metadata": {
+        "title": "ABCDEFGHIJKLMNOPQR",
+        "last-modified": "2489-11-16T20:43:01Z",
+        "version": "ABCDEFGHIJKLMNOPQRST",
+        "oscal-version": "ABCDEFGHIJKLMNOPQRSTUVWX",
+        "published": "19-02-29",
+        "revision-history": [
+          {
+            "title": "ABCDEFG",
+            "published": "19-02-29",
+            "last-modified": "2912-12-30",
+            "version": "ABCDEFGH",
+            "oscal-version": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+            "properties": [
+              {
+                "value": "ABCDEFGHIJKLM",
+                "name": "ABCDE",
+                "uuid": "0DCAACBe-E1Da-4C97-aB62-f1C1FcbFB40E",
+                "ns": "ABCDEFGHIJ",
+                "class": "ABCDEFGHIJKLMNOPQRSTUV"
+              }
+            ],
+            "links": [
+              {
+                "text": "ABCDEFGHIJKLMNOPQRS",
+                "href": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+                "rel": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+                "media-type": "ABCDEFGHIJKLMNOPQRSTUV"
+              }
+            ],
+            "remarks": "ABCDEFGHI"
+          }
+        ],
+        "document-ids": [
+          {
+            "identifier": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB",
+            "type": "ABCDEFGHIJKLMN"
+          }
+        ],
+        "properties": [
+          {
+            "value": "ABCDEF",
+            "name": "ABCD",
+            "uuid": "Ec4DF0D4-Eab9-40d4-aC6C-53bbeBedaFDb",
+            "ns": "ABCDEFGHIJ",
+            "class": "ABCDEFGHIJK"
+          }
+        ],
+        "links": [
+          {
+            "text": "ABCDEFGHIJKL",
+            "href": "ABCDEFGH",
+            "rel": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+            "media-type": "ABCDEFGHI"
+          }
+        ],
+        "roles": [
+          {
+            "id": "ABCDEFGHIJKLMNOPQRSTUVW",
+            "title": "ABCD",
+            "short-name": "ABCDEFGHIJKLMNOPQRSTUVWX",
+            "desc": "ABCDEFGHIJKLMNOPQRSTUVWX",
+            "properties": [
+              {
+                "value": "ABCDEFGHIJKLMNOPQRSTUV",
+                "name": "ABCDE",
+                "uuid": "aa6e1DbD-BE43-4BBe-bAc5-3afbce8DcdE8",
+                "ns": "ABCDEFGHIJKLMNOPQRSTU",
+                "class": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "ABCDEFGHIJKLMNOPQRSTUV",
+                "uuid": "BcFb3c6d-281C-47a0-963f-BbcD61620BEE",
+                "ns": "ABCDE",
+                "value": "ABCDEFGHIJKLMNOPQRSTUVWX",
+                "remarks": "ABCDEFGHIJKLMNOPQRSTUVW"
+              }
+            ],
+            "links": [
+              {
+                "text": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                "href": "ABCDEFGHIJKLMNOPQRST",
+                "rel": "ABCDEFGHI",
+                "media-type": "ABCDEFGHIJKLMNOPQ"
+              }
+            ],
+            "remarks": "ABCDEFGH"
+          }
+        ],
+        "locations": [
+          {
+            "uuid": "D4CeCCeA-6f5e-40D0-AeAD-ee67CEde4bDe",
+            "address": {
+              "type": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB",
+              "postal-address": [
+                "ABCDEFGHIJKLMNOPQRSTUVW"
+              ],
+              "city": "ABCDEFGHIJK",
+              "state": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+              "postal-code": "ABCDEFGHIJKLMNOPQRS",
+              "country": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC"
+            },
+            "title": "ABCDEFG",
+            "email-addresses": [
+              "V@i"
+            ],
+            "telephone-numbers": [
+              {
+                "number": "ABCDEFGHIJKLMNOPQRST",
+                "type": "ABCD"
+              }
+            ],
+            "URLs": [
+              "ABCDEFGHIJKLMNOPQR"
+            ],
+            "properties": [
+              {
+                "value": "ABCDEFGHIJ",
+                "name": "ABCDE",
+                "uuid": "d8fCCFa8-F5CC-4FaE-8ee6-B8Ac6499dfC5",
+                "ns": "ABCDEFGHIJK",
+                "class": "ABCDEFGHIJKLMNOPQRSTUVW"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "ABCDEFGHIJKLMNOPQRSTUVWX",
+                "uuid": "cb7cfc0E-0BeE-41C2-B1dF-a7E5AbD6dd0d",
+                "ns": "ABCDEFGHIJKLMNOPQRSTUV",
+                "value": "ABCDEFGHIJKLMN",
+                "remarks": "ABCDEFGHIJK"
+              }
+            ],
+            "links": [
+              {
+                "text": "ABCDEFGHIJKLMNOP",
+                "href": "ABCDEFGHIJKLMNOP",
+                "rel": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                "media-type": "ABCDEFGHIJKLMNOPQRSTU"
+              }
+            ],
+            "remarks": "ABCDEFGHIJKLMNOPQRSTU"
+          }
+        ],
+        "parties": [
+          {
+            "uuid": "cA0a98cc-1Bd2-467F-BCfD-D8f6F86bdAec",
+            "type": "person",
+            "party-name": "ABCDEFGHIJKL",
+            "short-name": "ABCDEFGHIJKLMNOPQR",
+            "external-ids": [
+              {
+                "id": "ABCDEFGHIJKLM",
+                "type": "ABCDEFGHIJKLMNOPQRS"
+              }
+            ],
+            "properties": [
+              {
+                "value": "ABCDEFGHIJKLMNOPQRSTU",
+                "name": "ABCDEFGHIJKLMNOPQRS",
+                "uuid": "f3Fa23EF-6F52-4De5-9bBC-cAFad3ddCDf9",
+                "ns": "ABCDEFGHIJKLMNOPQRSTUVWX",
+                "class": "ABCDEFGHIJKLMNOPQRSTUVWXYZA"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+                "uuid": "Bfe1fDd8-bA1e-4aa1-a74D-feDc71cccFA7",
+                "ns": "ABCDEFG",
+                "value": "ABCDEFGHIJKLMNOPQRS",
+                "remarks": "ABCDEFGHIJKL"
+              }
+            ],
+            "links": [
+              {
+                "text": "ABCDEFGHIJKLM",
+                "href": "ABCDEFGHIJKLMNOPQR",
+                "rel": "ABCDEFGHIJKLMNOP",
+                "media-type": "ABCDEFGHIJKLMNOPQRSTUVW"
+              }
+            ],
+            "addresses": [
+              {
+                "type": "ABCDEFGHIJKLMNOPQ",
+                "postal-address": [
+                  "ABCDEFGHIJKLMNOPQRSTUVWXYZAB"
+                ],
+                "city": "ABCDEFGHIJKLMN",
+                "state": "ABCDEFGHIJKLMNOPQR",
+                "postal-code": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+                "country": "ABCDEFGHIJKLMN"
+              }
+            ],
+            "email-addresses": [
+              "i@;1"
+            ],
+            "telephone-numbers": [
+              {
+                "number": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+                "type": "ABCDEFGHIJKLMNO"
+              }
+            ],
+            "member-of-organizations": [
+              "e5dc6f8f-efBC-4cd9-9e0F-8DaA7df1b5ec"
+            ],
+            "location-uuids": [
+              "8FFFEDF7-Fdc7-4ebA-BFc7-AfF3bedCeC03"
+            ],
+            "remarks": "ABCDEFGHIJKLMNO"
+          }
+        ],
+        "responsible-parties": {},
+        "remarks": "ABCDE"
+      },
+      "poam-items": {
+        "title": "ABCDEFG",
+        "description": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+        "start": "2480-12-29",
+        "poam-item-group": [
+          {
+            "uuid": "ADdBcBeB-EfB9-4c8b-afbF-ACccaEbEB1bC",
+            "title": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+            "description": "ABCDEFGHIJ",
+            "collected": "1955-02-15",
+            "properties": [
+              {
+                "value": "ABCDEFGHIJKLMNOPQRSTU",
+                "name": "ABCDEFGHIJKLMNOPQR",
+                "uuid": "bCB3b7AD-f47B-4Ba1-92F5-4a547b8Ffb3E",
+                "ns": "ABCDEFGHIJKLMNOPQRSTU",
+                "class": "ABCDEFGH"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "ABCDEFGHIJKLMN",
+                "uuid": "BFFBfDB7-f194-4f77-Ad04-1F424Bb54EdF",
+                "ns": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB",
+                "value": "ABCD",
+                "remarks": "ABCDEFGHIJKLMNOPQRSTUVWXY"
+              }
+            ],
+            "expires": "1970-12-08",
+            "objective-status": {
+              "objective-id": "ABCDEFGHIJKLMNOPQRSTU",
+              "control-id": "ABCDEFGHIJKLMNOPQ",
+              "title": "ABCDEF",
+              "description": "ABCDEFGHIJKLM",
+              "result": {
+                "STRVALUE": "ABCDEFGHIJKLMNOPQRSTUV",
+                "system": "ABCDEFGHIJKLMNOPQRSTU"
+              },
+              "implementation-status": {
+                "STRVALUE": "ABCDEFGHIJKLM",
+                "system": "ABCDE"
+              },
+              "remarks": "ABCDEFGHIJKLMNOPQRSTU"
+            },
+            "implementation-statement-uuid": "eaa62fBf-7aE6-4DAa-8CC9-6Bf7AaddbC9F",
+            "observations": [
+              {
+                "uuid": "FA2A1caB-FFFF-4eE5-a9DA-B3Be7b2dFaff",
+                "description": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+                "observation-methods": [
+                  "ABCDEFGHIJKLMN"
+                ],
+                "title": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                "properties": [
+                  {
+                    "value": "ABCDEFGHI",
+                    "name": "ABCDEFGHIJKLMNO",
+                    "uuid": "aBaaBAD9-33FC-4ADe-bFa7-3Fa5dd9ebEc7",
+                    "ns": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+                    "class": "ABCDEFGHIJKLMN"
+                  }
+                ],
+                "annotations": [
+                  {
+                    "name": "ABCDEFGHIJKLMNOPQRSTUVW",
+                    "uuid": "44C2b4a7-e8B8-4F1C-AEb5-1CfB0D7Ec7Ff",
+                    "ns": "ABCDEFGHIJKLM",
+                    "value": "ABCDE",
+                    "remarks": "ABCDEFGHIJKL"
+                  }
+                ],
+                "observation-types": [
+                  "ABCDEFGHIJKLMNOPQRSTU"
+                ],
+                "assessors": [
+                  {
+                    "STRVALUE": "ABCDEFGHIJKLMNO",
+                    "party-uuid": "eaA5beCB-11bE-416a-a43A-8dC74ffd6eCa"
+                  }
+                ],
+                "subject-references": [
+                  {
+                    "uuid-ref": "FE99cDc0-c5Bc-4dcE-Bf0A-2E4aAeb5fccC",
+                    "type": "ABCDEFGHIJKLMNOP",
+                    "title": "ABCDEFGHIJKLMNOPQ",
+                    "props": [
+                      {
+                        "value": "ABCDEFGHIJKLMNOPQRST",
+                        "name": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+                        "uuid": "5CEaEBaD-8FDd-4fcE-b7db-adA3aAbfdCF5",
+                        "ns": "ABCDEFGHIJKLMNOPQRSTUV",
+                        "class": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB"
+                      }
+                    ]
+                  }
+                ],
+                "origins": [
+                  {
+                    "STRVALUE": "ABCDEFGHIJKLMNOPQRSTU",
+                    "uuid-ref": "ADBbEe9C-9cAC-44D7-8abf-3b7BC9eeC5F8",
+                    "type": "other"
+                  }
+                ],
+                "evidence-group": [
+                  {
+                    "description": "ABCDEFGHIJKL",
+                    "href": "ABCDEFGHIJK",
+                    "properties": [
+                      {
+                        "value": "ABCDEFGHI",
+                        "name": "ABCDEFG",
+                        "uuid": "e42674A8-E0AA-43DA-b77e-aaC69aD1E7FA",
+                        "ns": "ABCDEFGHIJKLMNOPQ",
+                        "class": "ABCDEFGHIJKLMNOPQRSTUVWXYZA"
+                      }
+                    ],
+                    "annotations": [
+                      {
+                        "name": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                        "uuid": "BaE3D7F1-8Edd-45Db-9bDe-BbFdB18bD909",
+                        "ns": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB",
+                        "value": "ABCDEFGHIJKLM",
+                        "remarks": "ABCDEFGHIJKLMNOPQRST"
+                      }
+                    ],
+                    "remarks": "ABCDEFGHIJKLM"
+                  }
+                ],
+                "remarks": "ABCDEFGHIJKLMNOPQRSTUVWXYZA"
+              }
+            ],
+            "threat-ids": [
+              {
+                "STRVALUE": "ABCDEFGHIJKLMNOPQRSTU",
+                "system": "ABCDE",
+                "uri": "ABCDEFGH"
+              }
+            ],
+            "risks": [
+              {
+                "uuid": "Af0D54cF-BbB8-4Bbb-b5bD-4d63Eb8f9dAB",
+                "title": "ABCDEFG",
+                "description": "ABCDEFGHI",
+                "risk-statement": "ABCDE",
+                "risk-status": "ABCDEFGHIJ",
+                "properties": [
+                  {
+                    "value": "ABCDEF",
+                    "name": "ABCDEFGHIJKLMNOPQRS",
+                    "uuid": "C6aE18DD-Fb2C-439C-A8aC-C56AA4d68daa",
+                    "ns": "ABCDEFGHIJKLMNOPQRSTUV",
+                    "class": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC"
+                  }
+                ],
+                "annotations": [
+                  {
+                    "name": "ABCDEFGHIJKLMNOP",
+                    "uuid": "5cC8A6bd-Cb0b-4f8D-beBa-aBAFFCED4Fca",
+                    "ns": "ABCDEFGHIJKLMNOPQRS",
+                    "value": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                    "remarks": "ABCDEFGHIJKLMNOPQRSTUVWXYZA"
+                  }
+                ],
+                "risk-metrics": [
+                  {
+                    "STRVALUE": "ABCDEFGHIJKLMNOPQR",
+                    "name": "ABCDEFGHIJKLM",
+                    "class": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+                    "system": "ABCDEFGHIJKLMNOPQRSTUVWXYZA"
+                  }
+                ],
+                "mitigating-factors": [
+                  {
+                    "uuid": "dCD4eD5c-C74A-4cad-9fdf-6ffBFb3EffB0",
+                    "description": "ABCDEFGHIJKLMNOP",
+                    "implementation-uuid": "deEc0fE4-DFe6-42A7-bAe9-dFffaFFa4CCC",
+                    "subject-references": [
+                      {
+                        "uuid-ref": "Bc2932B7-fbEc-47fE-BFeb-67B3AD8F3Cdc",
+                        "type": "ABCDEFGHIJKLMN",
+                        "title": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+                        "props": [
+                          {
+                            "value": "ABCDEF",
+                            "name": "ABCDEFGHIJKLM",
+                            "uuid": "e1acCcEB-eEFc-4ffe-a6cC-dEd91D6fFE8C",
+                            "ns": "ABCDEFGHIJKLMNOPQRSTUV",
+                            "class": "ABCDEFGHIJKLMNOPQRSTUVWXYZA"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "remediation-deadline": "1930-11-29T11:59:12.9+33:79",
+                "remediation-group": [
+                  {
+                    "uuid": "3b8Da7e0-CDcF-4Ed9-AbCd-7e95BcFaB4aa",
+                    "title": "ABCDEFGHIJKLMNOPQR",
+                    "description": "ABCDEFGHIJKL",
+                    "type": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+                    "properties": [
+                      {
+                        "value": "ABCDEFGHIJKLMNOPQRSTU",
+                        "name": "ABCDEFGHIJKLMNO",
+                        "uuid": "7AA2cCAd-E3DB-4bbb-90CD-ceE98BA8cA50",
+                        "ns": "ABCDEFGHIJKLMNO",
+                        "class": "ABCDEFGH"
+                      }
+                    ],
+                    "annotations": [
+                      {
+                        "name": "ABCDEFGH",
+                        "uuid": "9b867aeA-4E48-44ee-aCfb-Bde4ccF5c9fE",
+                        "ns": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                        "value": "ABCDEFG",
+                        "remarks": "ABCDEFGHI"
+                      }
+                    ],
+                    "origins": [
+                      {
+                        "STRVALUE": "ABCDEFGHIJKLMNOP",
+                        "uuid-ref": "583ECBAA-686f-4D04-A16F-AefBD0C1e4aC",
+                        "type": "ABCDEFGHIJKLM"
+                      }
+                    ],
+                    "requirements": [
+                      {
+                        "uuid": "89CEcf94-aec4-4CEA-9adf-DD4c5afdbBFE",
+                        "description": "ABCDEFGHIJKLMN",
+                        "subject-references": [
+                          {
+                            "uuid-ref": "BF1fAf5A-2dF4-40Ee-bfb5-75dAde149BEA",
+                            "type": "ABCDEFGHIJKLMNOP",
+                            "title": "ABCDEFGHIJK",
+                            "props": [
+                              {
+                                "value": "ABCDEFGHIJKLMN",
+                                "name": "ABCDEFGHIJKLMNOPQ",
+                                "uuid": "cf0eFB1B-3BDF-47DF-95f0-9dAebAEeeEdD",
+                                "ns": "ABCDEF",
+                                "class": "ABCDEFGHIJKLMNOPQRSTUV"
+                              }
+                            ]
+                          }
+                        ],
+                        "title": "ABCDEFGHIJKLMNOPQRSTUV",
+                        "properties": [
+                          {
+                            "value": "ABCDEFGHIJKLMN",
+                            "name": "ABCDEFGHIJKLMNOPQRS",
+                            "uuid": "60CA2DDC-1AbD-4B0E-b1bb-CfC0fEE5bD7c",
+                            "ns": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+                            "class": "ABCDEFGHIJKLMNOP"
+                          }
+                        ],
+                        "annotations": [
+                          {
+                            "name": "ABCDEFGHIJKLMNOPQR",
+                            "uuid": "DeccAd1D-6CAF-4A6a-bd4C-fCFb79caFC42",
+                            "ns": "ABCDEFGHIJKLMNOPQRSTUVW",
+                            "value": "ABCDE",
+                            "remarks": "ABCDEFGHIJKLMNOPQRS"
+                          }
+                        ],
+                        "remarks": "ABCDEFGHIJKLMNOPQRSTU"
+                      }
+                    ],
+                    "schedule": {
+                      "tasks": [
+                        {
+                          "uuid": "eeFdfcfc-B9a9-43BD-b142-AeB77DDdde4b",
+                          "title": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB",
+                          "description": "ABCDEFGHIJ",
+                          "properties": [
+                            {
+                              "value": "ABCDEFGHIJKLMNOPQRSTUVWX",
+                              "name": "ABCDEFGHIJKLMNOP",
+                              "uuid": "1df3CeBB-Bb9e-4b7D-834d-3dB09aCECEfb",
+                              "ns": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+                              "class": "ABCDEFGHIJKLMNOPQR"
+                            }
+                          ],
+                          "annotations": [
+                            {
+                              "name": "ABCDEFGHIJKLMNOPQ",
+                              "uuid": "3adC9e4c-cCB5-4deB-aC1A-D1b7cbFD3bdD",
+                              "ns": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                              "value": "ABCDEFGHIJKL",
+                              "remarks": "ABCDEF"
+                            }
+                          ],
+                          "start": "2812-09-02T21:37:12.9Z",
+                          "end": "1928-11-29T20:37:39+81:67",
+                          "activity-uuids": [
+                            "B47EFb1C-C6FE-4BBC-AEd9-09E6c20a5fb0"
+                          ],
+                          "role-ids": [
+                            "ABCDEFGHIJKLMN"
+                          ],
+                          "party-uuids": [
+                            "dd66defB-f5a1-4FeC-aeB0-FEfbEAbe9a0a"
+                          ],
+                          "location-uuids": [
+                            "de0cFf12-EEe0-422a-A3f1-a8ebaACFCA9f"
+                          ],
+                          "compare-to": "ABCDEFGHIJKLMN",
+                          "remarks": "ABCDEFGHIJKLMNOPQRSTUVWXYZA"
+                        }
+                      ],
+                      "uuid": "2cbDBc3E-cDca-4acE-B97D-AB55CEfaDEfa"
+                    },
+                    "remarks": "ABCDEFGHIJ"
+                  }
+                ],
+                "closure-actions": "ABCD",
+                "remediation-tracking": {
+                  "tracking-entries": [
+                    {
+                      "uuid": "edb84Db0-ae4c-4ABa-aADE-3bBbCd6E27Bd",
+                      "date-time-stamp": "2576-01-31",
+                      "description": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+                      "type": "ABCDEFGHIJKLMNOP",
+                      "title": "ABCDEFGHIJK",
+                      "properties": [
+                        {
+                          "value": "ABCDEFGHIJK",
+                          "name": "ABCDEFGHIJ",
+                          "uuid": "dacfdced-bBB7-4e6b-AeFf-dCaD695AA0dd",
+                          "ns": "ABCDEFGHIJKLMNOP",
+                          "class": "ABCDEFGHIJKLMNOPQRS"
+                        }
+                      ],
+                      "annotations": [
+                        {
+                          "name": "ABCDEFGHIJKLMNOP",
+                          "uuid": "5a236BD6-1fcF-401a-bCFb-7Ab3cA50B2bC",
+                          "ns": "ABCDEFGHIJKLMNOPQRS",
+                          "value": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+                          "remarks": "ABCDEFGHIJKLMNOPQRSTUVWXY"
+                        }
+                      ],
+                      "remarks": "ABCDEFGHIJKLMNOP"
+                    }
+                  ]
+                },
+                "party-uuids": [
+                  "EcEfA568-11f8-46ec-ba56-9B2ba4dFeddA"
+                ]
+              }
+            ],
+            "party-uuids": [
+              "96C003Fc-F47E-4AEB-aD8b-19d7c6BFAdCA"
+            ],
+            "remarks": "ABCDEFGHIJKLM"
+          }
+        ],
+        "properties": [
+          {
+            "value": "ABCDEFGHIJKLMN",
+            "name": "ABCDEFGHIJKLM",
+            "uuid": "BcdA5AAd-D6Bd-4B48-b975-EF8FdbF90ffd",
+            "ns": "ABCDEFGHIJK",
+            "class": "ABCDEFGHIJKLMNOPQRSTU"
+          }
+        ],
+        "annotations": [
+          {
+            "name": "ABCDEFGHIJK",
+            "uuid": "F0A4C86d-F3D3-4FbA-BBcb-4dBAEaeacf8a",
+            "ns": "ABCDEFGHIJKLMNO",
+            "value": "ABCDEFG",
+            "remarks": "ABCD"
+          }
+        ],
+        "end": "19-02-29",
+        "remarks": "ABCDEFGHIJK"
+      },
+      "import-ssp": {
+        "href": "ABCDEFGHIJKLMNOPQ",
+        "remarks": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      },
+      "system-id": {
+        "id": "ABCDEFGHIJKL",
+        "identifier-type": "ABCD"
+      },
+      "local-definitions": {
+        "components": {},
+        "inventory-items": {},
+        "remarks": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB"
+      },
+      "back-matter": {
+        "resources": [
+          {
+            "uuid": "adCFd7a5-bbA9-445e-8b3f-CbfDDDf8DB5C",
+            "title": "ABCDEFGHIJKLMNOPQRS",
+            "desc": "ABCDEFGHI",
+            "properties": [
+              {
+                "value": "ABCDEFGHIJ",
+                "name": "ABCDEFGHIJKLMNOPQR",
+                "uuid": "25eE2aE0-DFB2-4d3f-BF8C-F49bfCCa2aab",
+                "ns": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB",
+                "class": "ABCDEFGHIJKLMNOPQRST"
+              }
+            ],
+            "document-ids": [
+              {
+                "identifier": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+                "type": "ABCDEFGHIJKLM"
+              }
+            ],
+            "citation": {
+              "text": "ABCDEFGHI",
+              "properties": [
+                {
+                  "value": "ABCDEFGH",
+                  "name": "ABCDEF",
+                  "uuid": "eBeAD9a7-fdf0-4AbC-ba14-4AbBcf3105FF",
+                  "ns": "ABCDEF",
+                  "class": "ABCDEFGHIJKLMNOPQRSTUVW"
+                }
+              ],
+              "biblio": {}
+            },
+            "rlinks": [
+              {
+                "href": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                "media-type": "ABCDEFGHIJKLMNOPQRST",
+                "hashes": [
+                  {
+                    "value": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+                    "algorithm": "ABCDEFGHIJKLMN"
+                  }
+                ]
+              }
+            ],
+            "attachments": [
+              {
+                "value": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+                "filename": "ABCDEF",
+                "media-type": "ABCDEFGHIJKLMNOPQRS"
+              }
+            ],
+            "remarks": "ABCDEFGHIJKLMNOPQRSTUVWXY"
+          }
+        ]
+      }
+    }
+  }

@@ -114,16 +114,26 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blog-posts`,
-        path: `${__dirname}/src/blog-posts`,
+        name: `blog`,
+        path: `${__dirname}/src/blog`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `documentation-pages`,
-        path: `${__dirname}/src/documentation-pages`,
+        name: `documentation`,
+        path: `${__dirname}/src/documentation`,
       },
+    },  
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `oscal`,
+        path: `${__dirname}/content`,
+        plugins: [
+          `gatsby-transformer-json`
+        ]
+      }
     },
     `gatsby-transformer-remark`,
     {
@@ -136,6 +146,14 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/federalist-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    'gatsby-transformer-json',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `oscal-content`,
+        path: `${__dirname}/content`,
       },
     },
     `gatsby-plugin-netlify-cms`,

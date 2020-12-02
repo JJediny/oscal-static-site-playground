@@ -1,0 +1,230 @@
+type Attachments { value: String filename: String mediatype: String }
+
+type Hashes { value: String algorithm: String }
+
+type Rlinks { href: String mediatype: String hashes: [Hashes ] }
+
+type Properties { value: String
+  name: String
+  uuid: String
+  ns: String
+  class: String }
+
+type Citation { text: String properties: [Properties ] }
+
+type Documentids { identifier: String type: String }
+
+type Resources { uuid: String
+  title: String
+  desc: String
+  remarks: String
+  attachments: [Attachments ]
+  rlinks: [Rlinks ]
+  citation: Citation
+  documentids: [Documentids ]
+  properties: [Properties ] }
+
+type Backmatter { resources: [Resources ] }
+
+type Links { text: String
+  href: String
+  rel: String
+  mediatype: String }
+
+type Annotations { name: String
+  uuid: String
+  ns: String
+  value: String
+  remarks: String }
+
+type Implementedrequirements { uuid: String
+  controlid: String
+  remarks: String
+  links: [Links ]
+  annotations: [Annotations ]
+  properties: [Properties ] }
+
+type Controlimplementation { description: String
+  implementedrequirements: [Implementedrequirements ] }
+
+type Systeminventory { remarks: String }
+
+type Leveragedauthorizations { uuid: String
+  title: String
+  partyuuid: String
+  dateauthorized: String
+  remarks: String
+  links: [Links ]
+  annotations: [Annotations ]
+  properties: [Properties ] }
+
+type Systemimplementation { remarks: String
+  systeminventory: Systeminventory
+  leveragedauthorizations: [Leveragedauthorizations ]
+  links: [Links ]
+  annotations: [Annotations ]
+  properties: [Properties ] }
+
+type Dataflow { description: String
+  remarks: String
+  links: [Links ]
+  annotations: [Annotations ]
+  properties: [Properties ] }
+
+type Networkarchitecture { description: String
+  remarks: String
+  links: [Links ]
+  annotations: [Annotations ]
+  properties: [Properties ] }
+
+type Authorizationboundary { description: String
+  remarks: String
+  links: [Links ]
+  annotations: [Annotations ]
+  properties: [Properties ] }
+
+type Status { state: String remarks: String }
+
+type Securityimpactlevel { securityobjectiveconfidentiality: String
+  securityobjectiveintegrity: String
+  securityobjectiveavailability: String }
+
+type Availabilityimpact { base: String
+  selected: String
+  adjustmentjustification: String
+  properties: [Properties ] }
+
+type Integrityimpact { base: String
+  selected: String
+  adjustmentjustification: String
+  properties: [Properties ] }
+
+type Confidentialityimpact { base: String
+  selected: String
+  adjustmentjustification: String
+  properties: [Properties ] }
+
+type Informationtypes { title: String
+  description: String
+  uuid: String
+  properties: [Properties ]
+  availabilityimpact: Availabilityimpact
+  integrityimpact: Integrityimpact
+  confidentialityimpact: Confidentialityimpact }
+
+type Systeminformation { links: [Links ]
+  annotations: [Annotations ]
+  properties: [Properties ]
+  informationtypes: [Informationtypes ] }
+
+type Systemids { id: String identifiertype: String }
+
+type Systemcharacteristics { systemname: String
+  description: String
+  securitysensitivitylevel: String
+  systemnameshort: String
+  dateauthorized: String
+  remarks: String
+  dataflow: Dataflow
+  networkarchitecture: Networkarchitecture
+  links: [Links ]
+  annotations: [Annotations ]
+  properties: [Properties ]
+  authorizationboundary: Authorizationboundary
+  status: Status
+  securityimpactlevel: Securityimpactlevel
+  systeminformation: Systeminformation
+  systemids: [Systemids ] }
+
+type Importprofile { href: String remarks: String }
+
+type Telephonenumbers { number: String type: String }
+
+type Addresses { type: String
+  city: String
+  state: String
+  postalcode: String
+  country: String
+  postaladdress: [String ] }
+
+type Externalids { id: String type: String }
+
+type Parties { uuid: String
+  type: String
+  partyname: String
+  shortname: String
+  remarks: String
+  locationuuids: [String ]
+  memberoforganizations: [String ]
+  telephonenumbers: [Telephonenumbers ]
+  emailaddresses: [String ]
+  addresses: [Addresses ]
+  links: [Links ]
+  annotations: [Annotations ]
+  properties: [Properties ]
+  externalids: [Externalids ] }
+
+type Address { type: String
+  city: String
+  state: String
+  postalcode: String
+  country: String
+  postaladdress: [String ] }
+
+type Locations { uuid: String
+  title: String
+  remarks: String
+  links: [Links ]
+  annotations: [Annotations ]
+  properties: [Properties ]
+  URLs: [String ]
+  telephonenumbers: [Telephonenumbers ]
+  emailaddresses: [String ]
+  address: Address }
+
+type Roles { id: String
+  title: String
+  shortname: String
+  desc: String
+  remarks: String
+  links: [Links ]
+  annotations: [Annotations ]
+  properties: [Properties ] }
+
+type Revisionhistory { title: String
+  published: String
+  lastmodified: String
+  version: String
+  oscalversion: String
+  remarks: String
+  links: [Links ]
+  properties: [Properties ] }
+
+type Metadata { title: String
+  lastmodified: String
+  version: String
+  oscalversion: String
+  published: String
+  remarks: String
+  parties: [Parties ]
+  locations: [Locations ]
+  roles: [Roles ]
+  links: [Links ]
+  properties: [Properties ]
+  documentids: [Documentids ]
+  revisionhistory: [Revisionhistory ] }
+
+type Systemsecurityplan { uuid: String
+  backmatter: Backmatter
+  controlimplementation: Controlimplementation
+  systemimplementation: Systemimplementation
+  systemcharacteristics: Systemcharacteristics
+  importprofile: Importprofile
+  metadata: Metadata }
+
+type AutogeneratedMainType { systemsecurityplan: Systemsecurityplan }
+
+# Types with identical fields:
+# Dataflow Networkarchitecture Authorizationboundary
+# Availabilityimpact Integrityimpact Confidentialityimpact
+# Addresses Address
