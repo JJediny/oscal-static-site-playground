@@ -33,7 +33,7 @@
     "gatsby-source-filesystem": "^2.6.1",
     "gatsby-source-graphql": "^2.0.15",
     "gatsby-transformer-json": "latest",
-    "gatsby-transformer-remark": "^2.9.2",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.1.17",
     "graphql-birdseye": "^1.2.1",
     "js-yaml": "latest",
