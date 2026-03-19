@@ -1,32 +1,9 @@
-import React, { useEffect, useState } from "react"
+import React from 'react'
+import raw from '../../content/oscal_poam_schema.json'
+import OscalPage from '../components/oscal-page'
 
-const JSONbuildtime = () => {
-  const [data, setData] = useState(null)
+const OscalPoam = () => (
+  <OscalPage model={raw['plan-of-action-and-milestones']} modelLabel="Plan of Action and Milestones (POA&M)" />
+)
 
-  useEffect(() => {
-    let mounted = true
-    import("../../content/oscal_poam_schema.json")
-      .then(mod => {
-        if (mounted) setData(mod.default || mod)
-      })
-      .catch(() => {})
-    return () => {
-      mounted = false
-    }
-  }, [])
-
-  if (!data) return null
-
-  return (
-    <div style={{ maxWidth: `960px`, margin: `1.45rem` }}>
-      <h1>{data.poam.metadata.title}</h1>
-      <ul>
-        {data.poam["poam-items"].map((item, index) => (
-          <li key={`poam_${index}`}>{item.item}</li>
-        ))}
-      </ul>
-    </div>
-  )
-}
-
-export default JSONbuildtime
+export default OscalPoam

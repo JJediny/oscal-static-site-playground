@@ -100,7 +100,9 @@ module.exports = {
       // ua: 'your-ua',
     },
   },
-  pathPrefix: process.env.BASEURL || '/',
+  // For GitHub Pages: defaults to the repo subpath.
+  // Override with PATHPREFIX env var (or leave as BASEURL for Federalist).
+  pathPrefix: process.env.PATHPREFIX || process.env.BASEURL || '/oscal-static-site-playground',
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
@@ -133,8 +135,6 @@ module.exports = {
       }
     },
     `gatsby-transformer-remark`,
-    // Temporarily removed `gatsby-plugin-manifest` to avoid native `sharp` dependency during local build.
-    // Re-enable once `sharp` is available on this machine or build runs under Rosetta/Docker.
     'gatsby-transformer-json',
     {
       resolve: `gatsby-source-filesystem`,
@@ -143,8 +143,22 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
-    // Decap CMS temporarily disabled for local build due to React/sharp native issues.
-    // Re-enable and adjust deps when ready to run CMS locally.
+    // gatsby-plugin-manifest requires the sharp native binary.
+    // Enable by setting GATSBY_ENABLE_MANIFEST=true in your environment.
+    ...(process.env.GATSBY_ENABLE_MANIFEST === 'true' ? [{
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `U.S. Web Design System + Gatsby + OSCAL`,
+        short_name: `OSCAL Playground`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#005ea2`,
+        display: `minimal-ui`,
+        icon: `src/images/gatsby-icon.png`,
+      },
+    }] : []),
+    // Decap CMS plugin — enable by setting GATSBY_ENABLE_CMS=true in your environment.
+    ...(process.env.GATSBY_ENABLE_CMS === 'true' ? [`gatsby-plugin-decap-cms`] : []),
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
