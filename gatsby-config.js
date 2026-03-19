@@ -130,24 +130,11 @@ module.exports = {
       options: {
         name: `oscal`,
         path: `${__dirname}/content`,
-        plugins: [
-          `gatsby-transformer-json`
-        ]
       }
     },
     `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/federalist-icon.png`, // This path is relative to the root of the site.
-      },
-    },
+    // Temporarily removed `gatsby-plugin-manifest` to avoid native `sharp` dependency during local build.
+    // Re-enable once `sharp` is available on this machine or build runs under Rosetta/Docker.
     'gatsby-transformer-json',
     {
       resolve: `gatsby-source-filesystem`,
@@ -156,7 +143,8 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
-    `gatsby-plugin-netlify-cms`,
+    // Decap CMS temporarily disabled for local build due to React/sharp native issues.
+    // Re-enable and adjust deps when ready to run CMS locally.
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

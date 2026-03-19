@@ -16,7 +16,11 @@ $theme-hero-image: '#{$theme-image-path}/hero.png';
 // Uncomment to see this working
 // $theme-color-primary-darker: 'black';
 
-@import 'uswds';
+/* Using the compiled USWDS CSS to avoid compiling upstream SCSS (deprecation warnings).
+  USWDS styles are imported in gatsby-browser.js as 'uswds/dist/css/uswds.min.css'. */
+
+/* Import precompiled USWDS CSS to avoid processing upstream SCSS */
+@import "../../node_modules/uswds/dist/css/uswds.min.css";
 
 // Your custom SASS/CSS goes here
 @media screen and (min-width: 640px) {

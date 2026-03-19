@@ -1,14 +1,32 @@
-import React from "react"
-import JSONData from "../../content/oscal_poam_schema.json"
+import React, { useEffect, useState } from "react"
 
-const JSONbuildtime = () => (
-  <div style={{ maxWidth: `960px`, margin: `1.45rem` }}>
-    <h1>{JSONData.poam.metadata.title}</h1>
-    <ul>
-      {JSONData.poam.poam-items.map((data, index) => {
-        return <li key={`poam_${index}`}>{data.item}</li>
-      })}
-    </ul>
-  </div>
-)
+const JSONbuildtime = () => {
+  const [data, setData] = useState(null)
+
+  useEffect(() => {
+    let mounted = true
+    import("../../content/oscal_poam_schema.json")
+      .then(mod => {
+        if (mounted) setData(mod.default || mod)
+      })
+      .catch(() => {})
+    return () => {
+      mounted = false
+    }
+  }, [])
+
+  if (!data) return null
+
+  return (
+    <div style={{ maxWidth: `960px`, margin: `1.45rem` }}>
+      <h1>{data.poam.metadata.title}</h1>
+      <ul>
+        {data.poam["poam-items"].map((item, index) => (
+          <li key={`poam_${index}`}>{item.item}</li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
 export default JSONbuildtime
