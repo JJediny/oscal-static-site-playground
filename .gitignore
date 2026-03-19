@@ -59,6 +59,9 @@ typings/
 public
 _site
 
+# Generated at build/dev time — not committed
+static/schema.json
+
 # Mac files
 .DS_Store
 

@@ -170,11 +170,27 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   });
 };
 
-exports.createPages = async ({ actions, graphql }) => {
+exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
   await createBlogPages(createPage, graphql);
   await createMarkdownPages(createPage, graphql);
+
+  // Write schema.json so the static GraphiQL explorer works in both dev and build.
+  // Written to static/ so gatsby develop serves it as a static asset at /schema.json.
+  // onPostBuild overwrites the copy in public/ for production builds.
+  try {
+    const { getIntrospectionQuery } = require('graphql');
+    const result = await graphql(getIntrospectionQuery());
+    if (!result.errors || !result.errors.length) {
+      const schemaJson = JSON.stringify({ data: result.data }, null, 2);
+      // static/ → served by dev server; also copied into public/ during build
+      fs.writeFileSync(path.join(__dirname, 'static', 'schema.json'), schemaJson);
+      reporter.info('[schema export] schema.json written to static/ ✓');
+    }
+  } catch (e) {
+    reporter.warn('[schema export] Could not write schema.json: ' + e.message);
+  }
 };
 
 async function createBlogPages(createPage, graphql) {
