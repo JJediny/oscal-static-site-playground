@@ -9,6 +9,25 @@ const { paginate } = require('gatsby-awesome-pagination');
 
 // Adds the source "name" from the filesystem plugin to the markdown remark nodes
 // so we can filter by it.
+// During HTML builds some node-only modules (iconv-lite, tr46, encoding, whatwg-url)
+// can cause runtime errors. Provide lightweight aliases for the build-html stages
+// so static HTML generation doesn't execute those modules.
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+  if (stage === 'build-html' || stage === 'develop-html') {
+    actions.setWebpackConfig({
+      resolve: {
+        alias: {
+          'iconv-lite': require.resolve('./empty-module.js'),
+          'iconv-lite/encodings': require.resolve('./empty-module.js'),
+          'iconv-lite/lib/streams': require.resolve('./empty-module.js'),
+          encoding: require.resolve('./empty-module.js'),
+          tr46: require.resolve('./empty-module.js'),
+          'whatwg-url': require.resolve('./empty-module.js'),
+        },
+      },
+    });
+  }
+};
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
 
