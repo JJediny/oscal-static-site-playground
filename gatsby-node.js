@@ -5,7 +5,103 @@
  */
 
 const path = require('path');
+const fs = require('fs');
 const { paginate } = require('gatsby-awesome-pagination');
+
+/**
+ * Build-time validation: validate OSCAL content JSON files against their structural
+ * invariants using AJV. Failures are reported as warnings — the build is not aborted
+ * so that partial/draft content can still be previewed.
+ */
+exports.onPreInit = ({ reporter }) => {
+  const Ajv = require('ajv');
+  const addFormats = require('ajv-formats');
+  const ajv = new Ajv({ allErrors: true });
+  addFormats(ajv);
+
+  /** Minimal shared schema for the OSCAL metadata block */
+  const metadataSchema = {
+    type: 'object',
+    required: ['title', 'last-modified', 'oscal-version'],
+    properties: {
+      title: { type: 'string', minLength: 1 },
+      version: { type: 'string' },
+      'oscal-version': { type: 'string', pattern: '^\\d+\\.\\d+' },
+      'last-modified': { type: 'string', format: 'date-time' },
+      published: { type: 'string', format: 'date-time' },
+    },
+  };
+
+  /** Map from content filename prefix → root key inside that JSON file */
+  const contentFiles = [
+    { file: 'oscal_ssp_schema.json',                rootKey: 'system-security-plan' },
+    { file: 'oscal_catalog_schema.json',             rootKey: 'catalog' },
+    { file: 'oscal_profile_schema.json',             rootKey: 'profile' },
+    { file: 'oscal_component_schema.json',           rootKey: 'component-definition' },
+    { file: 'oscal_poam_schema.json',                rootKey: 'plan-of-action-and-milestones' },
+    { file: 'oscal_assessment-plan_schema.json',     rootKey: 'assessment-plan' },
+    { file: 'oscal_assessment-results_schema.json',  rootKey: 'assessment-results' },
+  ];
+
+  const validateMetadata = ajv.compile(metadataSchema);
+  const contentDir = path.join(__dirname, 'content');
+
+  let hasWarnings = false;
+
+  for (const { file, rootKey } of contentFiles) {
+    const filePath = path.join(contentDir, file);
+    if (!fs.existsSync(filePath)) {
+      reporter.warn(`[OSCAL validation] File not found: ${file}`);
+      hasWarnings = true;
+      continue;
+    }
+
+    let parsed;
+    try {
+      parsed = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    } catch (err) {
+      reporter.warn(`[OSCAL validation] Failed to parse ${file}: ${err.message}`);
+      hasWarnings = true;
+      continue;
+    }
+
+    const root = parsed[rootKey];
+    if (!root) {
+      reporter.warn(
+        `[OSCAL validation] ${file}: expected root key "${rootKey}" not found. ` +
+          `Found keys: ${Object.keys(parsed).join(', ')}`
+      );
+      hasWarnings = true;
+      continue;
+    }
+
+    if (!root.uuid) {
+      reporter.warn(`[OSCAL validation] ${file} (${rootKey}): missing required field "uuid"`);
+      hasWarnings = true;
+    }
+
+    if (!root.metadata) {
+      reporter.warn(`[OSCAL validation] ${file} (${rootKey}): missing required field "metadata"`);
+      hasWarnings = true;
+      continue;
+    }
+
+    const valid = validateMetadata(root.metadata);
+    if (!valid) {
+      const errors = validateMetadata.errors
+        .map((e) => `  ${e.instancePath || '(root)'} ${e.message}`)
+        .join('\n');
+      reporter.warn(
+        `[OSCAL validation] ${file} (${rootKey}) metadata validation errors:\n${errors}`
+      );
+      hasWarnings = true;
+    }
+  }
+
+  if (!hasWarnings) {
+    reporter.info('[OSCAL validation] All content files passed structural validation ✓');
+  }
+};
 
 // Adds the source "name" from the filesystem plugin to the markdown remark nodes
 // so we can filter by it.

@@ -15,9 +15,11 @@ const Hero = () => (
           Support the callout with some short explanatory text. You don’t need
           more than a couple of sentences.
         </p>
-        <a className="usa-button" href="/___graphql?">
-          GraphiQL Playground
-        </a>
+        {process.env.NODE_ENV === 'development' && (
+          <a className="usa-button" href="/___graphql">
+            GraphiQL Playground
+          </a>
+        )}
       </div>
     </div>
   </section>

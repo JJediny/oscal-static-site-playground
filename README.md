@@ -65,8 +65,8 @@ ga: {
 ## Getting Started
 
 ### Installation for development
-    $ git clone https://github.com/../..
-    $ cd ..
+    $ git clone https://github.com/18F/federalist-uswds-gatsby
+    $ cd federalist-uswds-gatsby
 
 ### Running the application
 
@@ -77,12 +77,12 @@ ga: {
 To build but not serve the site, run `pnpm run build`.
 
 #### With Docker
-    $ docker-compose run pnpm install
+    $ docker-compose run node pnpm install
     $ docker-compose up
 
 To build but not serve the site, run:
 ```
-docker-compose run pnpm run build
+docker-compose run node pnpm run build
 ```
 
 Open your web browser to [localhost:8000](http://localhost:8000/) to view your
