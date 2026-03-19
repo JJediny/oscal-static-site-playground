@@ -103,6 +103,29 @@ exports.onPreInit = ({ reporter }) => {
   }
 };
 
+/**
+ * Export the full Gatsby GraphQL schema as an introspection JSON file after
+ * every build. The file is written to public/schema.json so the static
+ * GraphiQL explorer page can load it without a live server.
+ */
+exports.onPostBuild = async ({ graphql, reporter }) => {
+  const { getIntrospectionQuery } = require('graphql');
+
+  const result = await graphql(getIntrospectionQuery());
+
+  if (result.errors && result.errors.length) {
+    reporter.warn(
+      '[schema export] Introspection errors: ' +
+        result.errors.map((e) => e.message).join(', ')
+    );
+    return;
+  }
+
+  const outPath = path.join(__dirname, 'public', 'schema.json');
+  fs.writeFileSync(outPath, JSON.stringify({ data: result.data }, null, 2));
+  reporter.info('[schema export] Introspection schema written to public/schema.json ✓');
+};
+
 // Adds the source "name" from the filesystem plugin to the markdown remark nodes
 // so we can filter by it.
 // During HTML builds some node-only modules (iconv-lite, tr46, encoding, whatwg-url)
